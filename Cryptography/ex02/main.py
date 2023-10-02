@@ -12,7 +12,7 @@ downloaded_file = "transmission-4.0.4-x64.msi"
 sha256_hash = h.sha256()
 
 with open(downloaded_file, "rb") as f:
-    # Lecture du fichier par petits morceaux pour économiser la mémoire
+    # decompose the file in little pieces to economize memory
     while chunk := f.read(8192):
         sha256_hash.update(chunk)
 
