@@ -8,6 +8,7 @@
 import hashlib as h
 
 downloaded_file = "transmission-4.0.4-x64.msi"
+original_hash = "9120ab6e93b946841a7249e763ad54a851103e8bcc5121dac49c0b3676493ba5"
 
 sha256_hash = h.sha256()
 
@@ -18,5 +19,9 @@ with open(downloaded_file, "rb") as f:
 
 df_hash = sha256_hash.hexdigest()
 
-print("Le hachage MD5 du fichier téléchargé est :", df_hash)
-# spoiler it's the same - successful mission :)
+#testing if the two hash are the same
+print("The hash of '", downloaded_file,  "' is : ", df_hash)
+if df_hash == original_hash :
+    print("SUCCESSFUL - it's the same hash !")
+else :
+    print("not the same hash... you are fucked")
