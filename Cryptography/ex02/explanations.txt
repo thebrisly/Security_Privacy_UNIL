@@ -1,4 +1,8 @@
-Vérifier l'intégrité d'un fichier téléchargé signifie s'assurer que le fichier que vous avez téléchargé depuis un site web 
+# Explications de ChatGPT à la question :
+
+<h1> Que veut dire vérifier l'intégrité d'un fichier téléchargé ? </h1>
+
+<p> Vérifier l'intégrité d'un fichier téléchargé signifie s'assurer que le fichier que vous avez téléchargé depuis un site web 
 ou un serveur est identique à la version d'origine et n'a pas été altéré ou corrompu pendant le processus de téléchargement. 
 Cela garantit que le fichier que vous obtenez est fiable et qu'il ne contient aucune erreur ou modification indésirable.
 
@@ -14,4 +18,4 @@ une erreur lors du téléchargement ou d'autres problèmes, ce qui signifie que 
 
 La vérification de l'intégrité est couramment utilisée pour garantir que les logiciels, les mises à jour, 
 les fichiers téléchargés, et d'autres données importantes ne sont pas corrompus ou infectés par des logiciels malveillants 
-lors du téléchargement depuis Internet.
+lors du téléchargement depuis Internet. </p>
