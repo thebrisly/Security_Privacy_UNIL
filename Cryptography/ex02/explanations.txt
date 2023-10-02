@@ -1,0 +1,17 @@
+Vérifier l'intégrité d'un fichier téléchargé signifie s'assurer que le fichier que vous avez téléchargé depuis un site web 
+ou un serveur est identique à la version d'origine et n'a pas été altéré ou corrompu pendant le processus de téléchargement. 
+Cela garantit que le fichier que vous obtenez est fiable et qu'il ne contient aucune erreur ou modification indésirable.
+
+Pour accomplir cette vérification, on utilise généralement des hachages cryptographiques. 
+Un hachage est une sorte de "empreinte digitale" du fichier qui est calculée à partir de son contenu. 
+Si le fichier est inchangé, son hachage sera toujours le même. A
+insi, en comparant le hachage du fichier téléchargé avec le hachage attendu fourni par le site web ou le serveur, 
+vous pouvez déterminer si le fichier est intègre ou s'il a été altéré en cours de route.
+
+Si les hachages correspondent, cela signifie que le fichier téléchargé est identique à celui qui était prévu, 
+et il est donc considéré comme intègre. Si les hachages diffèrent, cela peut indiquer une altération du fichier, 
+une erreur lors du téléchargement ou d'autres problèmes, ce qui signifie que le fichier peut ne pas être sûr à utiliser.
+
+La vérification de l'intégrité est couramment utilisée pour garantir que les logiciels, les mises à jour, 
+les fichiers téléchargés, et d'autres données importantes ne sont pas corrompus ou infectés par des logiciels malveillants 
+lors du téléchargement depuis Internet.
