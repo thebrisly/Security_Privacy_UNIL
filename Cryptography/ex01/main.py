@@ -1,3 +1,6 @@
+## encode() is used to convert the text into a sequence of bytes (binary representation)
+## hexdigest() is used to convert the hash into a hexa decimal notation othwerwise it will output an md5 object
+
 import hashlib as h
 
 text_to_hash = input("Give me a text that I need to hash: ")
