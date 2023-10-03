@@ -3,20 +3,28 @@ letter_frequency_english =  {'e' : 12.0, 't' : 9.10, 'a' : 8.12, 'o' : 7.68, 'i'
 with open('ciphertext.txt', 'r') as file:
     ciphertext = file.read()
 
+letter_counts = {letter: 0 for letter in 'abcdefghijklmnopqrstuvwxyz'}
 
 # Function to decrypt the text with a found shift
 def decrypt(text, shift):
-    
-
+    decrypted_text = ""
+    for char in text :
+        if char.isalpha() :
+            if char.isupper() :
+                char = chr(((ord(char) - ord('A') - shift) % 26) + ord('A'))
+            elif char.islower() :
+                char = chr(((ord(char) - ord('a') - shift) % 26) + ord('a'))
+        decrypted_text += char
     return decrypted_text
 
-# Function to calculate the distance between frequencies and letters of the ciphertext
-def calculate_distance(text, letter_frequencies):
-    
-    return distance
+# Counting how many letters there are (how many A's, B's, etc...) in the ciphertext to find the most frequent letter
+for char in ciphertext.lower():
+    if char in letter_counts:
+        letter_counts[char] += 1
+most_frequent_letter = max(letter_counts, key=letter_counts.get)
 
 # Find the most accurate shift
-best_shift = 
+best_shift = (ord(most_frequent_letter) - ord('e')) % 26
 
 
 # Decrypt the text with the most accurate shift
