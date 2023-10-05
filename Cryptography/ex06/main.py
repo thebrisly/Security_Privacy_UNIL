@@ -28,7 +28,7 @@ for salt in range(1000000):  # 000000 - 999999
     hashed = hashlib.md5(combined_string.encode()).hexdigest()
 
     for participant in hashed_phone_numbers["participants"]:
-        if hashed in [participant["work phone"], participant["mobile phone"]] or hashed in participant["contacts"]:
+        if hashed in [participant["work phone"]]:
             print(f"SALT : {salt_str}")
             print(f"PHONE NUMBER : {num_str}")
             break
